@@ -1,15 +1,15 @@
 // import './App.css';
 // import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import Map from './components/Map.js';
-//import NavBar from './components/NavBar.js';
+
+import MainPage from './components/MainPage.js'
 
 
 function App() {
   return (
 
-    <section>
-      <Map />
-    </section>
+    <div>
+      <MainPage />
+    </div>
 
     
    /*<>
