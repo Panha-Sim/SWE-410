@@ -1,0 +1,40 @@
+{
+    "Location":[
+        {
+            "address":"870 N 54th St, Chandler, AZ 85226",
+            "hour":"Mon-Fri: 10:00 AM - 9:00 PM",
+            "phone": "(480) 940-4006",
+            "link":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938279.187246679!2d-113.27636147947022!3d33.30335926793261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b043e861f9bff%3A0x28a0fb7e716ae085!2sREI!5e0!3m2!1sen!2sus!4v1709492756349!5m2!1sen!2sus"
+        },
+        {
+            "address":"12634 N Paradise Village Pkwy W, Phoenix, AZ 85032",
+            "hour":"Mon-Fri: 10:00 AM - 9:00 PM",
+            "phone": "(602) 996-5400",
+            "link":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938279.187246679!2d-113.27636147947022!3d33.30335926793261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b73b0942b05eb%3A0xc4ec9b1c5630b985!2sREI!5e0!3m2!1sen!2sus!4v1709492788624!5m2!1sen!2sus"
+        },
+        {
+            "address":"17465 N 93rd St, Scottsdale, AZ 85255",
+            "hour":"Mon-Fri: 10:00 AM - 9:00 PM",
+            "phone": "(480) 945-2881",
+            "link":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938279.187246679!2d-113.27636147947022!3d33.30335926793261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b75c305da2cef%3A0x1e8368d49db074b4!2sREI%20Co-op%20Adventure%20Center%20Arizona!5e0!3m2!1sen!2sus!4v1709492860611!5m2!1sen!2sus"
+        },
+        {
+            "address":"160 W Wetmore Rd, Tucson, AZ 85705",
+            "hour":"Mon-Fri: 9:00 AM - 8:00 PM",
+            "phone": "(520) 887-1938",
+            "link":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2066714.579078349!2d-114.65199564777664!3d33.12828969779255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d673c00bdd4713%3A0x5fd1d20ff4ea36e4!2sREI!5e0!3m2!1sen!2sus!4v1709493182984!5m2!1sen!2sus"
+        },
+        {
+            "address":"1761 AZ-69 Suite 26b, Prescott, AZ 86301",
+            "hour":"Mon-Fri: 9:00 AM - 8:00 PM",
+            "phone": "(928) 267-1550",
+            "link":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282928.7362274146!2d-115.33419042725549!3d33.97703178199427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d29b3ec9b0b15%3A0xdc3b418d38fc1aa0!2sREI!5e0!3m2!1sen!2sus!4v1709493236819!5m2!1sen!2sus"
+        },
+        {
+            "address":"323 S Windsor Ln, Flagstaff, AZ 86001",
+            "hour":"Mon-Fri: 9:00 AM - 8:00 PM",
+            "phone": "(928) 213-1914",
+            "link":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398379.784235709!2d-114.3473675012856!3d33.71592810635075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8f6b1cdb545b%3A0xbf58dc49bf096ad5!2sREI!5e0!3m2!1sen!2sus!4v1709494569348!5m2!1sen!2sus"
+        }
+    ]
+}
