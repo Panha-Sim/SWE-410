@@ -72,7 +72,7 @@ export default function NavBar() {
             <button className="btn btn-outline-light me-2" type="button">
               Sign In
             </button>
-            <button className="btn btn-primary" type="button">
+            <button className="btn btn-success" type="button">
               Sign Up
             </button>
           </div>

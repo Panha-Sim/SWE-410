@@ -36,18 +36,19 @@ const MainPage = () => {
       <div className="container">
         <div class="row gx-5 ">
           <div class="col-md-6">
-            
             {/* =========== LOCATION LIST SEARCH BAR =========== */}
-            <div class="form-outline mb-3" data-mdb-input-init>
-              <input
-                type="search"
-                id="form1"
-                class="form-control"
-                placeholder="Enter Location Address"
-                aria-label="Search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
+            <div className="form-outline-container">
+              <div class="form-outline mb-3" data-mdb-input-init>
+                <input
+                  type="search"
+                  id="form1"
+                  class="form-control"
+                  placeholder="Enter Location Address"
+                  aria-label="Search"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </div>
             </div>
 
             {/* ========= MAP LOCATIONS ==========   */}

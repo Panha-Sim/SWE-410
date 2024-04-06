@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+import "../styles/MapListGroup.css";
+
+
 export default function ListGroup(props) {
   const [isMatched, setIsMatched] = useState(true);
 
