@@ -36,38 +36,37 @@ const MainPage = () => {
       <div className="container">
         <div class="row gx-5 ">
           <div class="col-md-6">
-
+            
             {/* =========== LOCATION LIST SEARCH BAR =========== */}
-            <div className="container">
-              <div className="input-group rounded mt-3 mb-3">
-                <input
-                  type="search"
-                  className="form-control rounded"
-                  placeholder="Search"
-                  aria-label="Search"
-                  aria-describedby="search-addon"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <span className="input-group-text border-0" id="search-addon">
-                  <i className="fas fa-search"></i>
-                </span>
-              </div>
+            <div class="form-outline mb-3" data-mdb-input-init>
+              <input
+                type="search"
+                id="form1"
+                class="form-control"
+                placeholder="Enter Location Address"
+                aria-label="Search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
             </div>
 
             {/* ========= MAP LOCATIONS ==========   */}
-            <div class="list-group">
-              {MockLocationData.Location.map((location) => (
-                <MapListGroup
-                  active={location.address === activeAddress}
-                  onClick={() => handleClick(location.address, location.link)}
-                  address={location.address}
-                  hour={location.hour}
-                  phone={location.phone}
-                  searchQuery={searchQuery}
-                />
-              ))}
+            <div className="list-group-container">
+              <div className="list-group">
+                {MockLocationData.Location.map((location) => (
+                  <MapListGroup
+                    key={location.address}
+                    active={location.address === activeAddress}
+                    onClick={() => handleClick(location.address, location.link)}
+                    address={location.address}
+                    hour={location.hour}
+                    phone={location.phone}
+                    searchQuery={searchQuery}
+                  />
+                ))}
+              </div>
             </div>
+
             {/* ======= END MAP ======== */}
           </div>
 
