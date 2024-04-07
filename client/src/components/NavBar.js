@@ -1,4 +1,5 @@
 import React from "react";
+//import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
@@ -39,32 +40,15 @@ export default function NavBar() {
               >
                 Products
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Outdoor Gear
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Apparel
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Footwear
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 Locations
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact
+              <a className="nav-link" href="/admin">
+                Admin
               </a>
             </li>
           </ul>

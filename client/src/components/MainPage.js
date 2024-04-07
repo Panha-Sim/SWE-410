@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-import "../styles/MainPage.css";
+import "../styles/Admin.css";
 
 // =========== PAGE COMPONENTS ===========
 import Map from "./Map";
@@ -14,8 +14,18 @@ const MainPage = () => {
   const [REIMapLink, setREIMapLink] = useState(
     MockLocationData.Location[0].link
   );
-
   const [searchQuery, setSearchQuery] = useState("");
+  const [locations, setLocations] = useState(MockLocationData.Location);
+
+  useEffect(() => {
+    // Load locations from local storage or mock data on initial render
+    const storedLocations = JSON.parse(localStorage.getItem("locations"));
+    if (storedLocations) {
+      setLocations(storedLocations);
+    } else {
+      setLocations(MockLocationData.Location);
+    }
+  }, []);
 
   const handleClick = (address, link) => {
     setActiveAddress(address);
@@ -25,7 +35,7 @@ const MainPage = () => {
 
   return (
     // =========== START OF MAIN PAGE ===========
-    <div className="main-container">
+    <div className="main-container" style={{ overflowY: 'auto', maxHeight:'calc(100vh - 250px)'}}>
       {/* =========== NAVBAR =========== */}
       <NavBar />
 
@@ -54,7 +64,7 @@ const MainPage = () => {
             {/* ========= MAP LOCATIONS ==========   */}
             <div className="list-group-container">
               <div className="list-group">
-                {MockLocationData.Location.map((location) => (
+                {locations.map((location) => (
                   <MapListGroup
                     key={location.address}
                     active={location.address === activeAddress}
@@ -73,6 +83,13 @@ const MainPage = () => {
 
           <div class="col-md-6">
             <Map link={REIMapLink} />
+          </div>
+        </div>
+
+        {/* Space underneath both columns */}
+        <div className="admin-container">
+        <div className="col">
+            
           </div>
         </div>
       </div>

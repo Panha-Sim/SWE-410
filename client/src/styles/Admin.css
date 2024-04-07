@@ -1,0 +1,59 @@
+header {
+  background-color: #f1f1f1;
+  color: #464646;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.form-outline-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Locations list ===== */
+.list-group-container {
+  max-height: 550px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+  max-height: 40px;
+}
+
+/* ===== Width of Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* ===== Track ===== */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* ===== Handle ===== */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* ===== Handle on hover ===== */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ===== REI Text in Navbar ===== */
+.rei-text {
+  font-family: Arial;
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* ===== Admin Form at bottom of page ===== */
+.admin-container {
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
