@@ -3,9 +3,11 @@ import React from "react";
 
 export default function NavBar() {
   return (
+
+    // ===== Start of Bootstrap Navbar
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/FFFFFF/external-mountain-location-vitaliy-gorbachev-fill-vitaly-gorbachev.png" alt="REI Logo" width="40" height="40" className="d-inline-block align-top" />
           <span className="rei-text">REI</span>
         </a>

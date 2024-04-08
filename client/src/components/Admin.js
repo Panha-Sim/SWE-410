@@ -10,6 +10,8 @@ import MapListGroup from "./MapListGroup";
 import MockLocationData from "../MockData/MockLocationData.json";
 
 const MainPage = () => {
+
+  // use states for each data handler
   const [activeAddress, setActiveAddress] = useState(null);
   const [REIMapLink, setREIMapLink] = useState(
     MockLocationData.Location[0].link
@@ -17,6 +19,7 @@ const MainPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [locations, setLocations] = useState(MockLocationData.Location);
 
+  // loads mock data to local storage
   useEffect(() => {
     // Load locations from local storage when the page is rendered
     const storedLocations = JSON.parse(localStorage.getItem("locations"));
@@ -27,6 +30,7 @@ const MainPage = () => {
     }
   }, []);
 
+  // updates map when a location is clicked on
   const handleClick = (address, link) => {
     setActiveAddress(address);
     setREIMapLink(link);
@@ -53,6 +57,7 @@ const MainPage = () => {
       link: "",
     };
 
+    // updates list of locations when a new location is created
     const updatedLocations = [...locations, newLocation];
     setLocations(updatedLocations);
     // Save to local storage
@@ -146,7 +151,7 @@ const MainPage = () => {
           </div>
         </div>
 
-        {/* Space underneath both columns */}
+        {/* Admin Input Form */}
         <div className="admin-container">
           <div className="col">
             <div className="container-fluid bg-light p-4">

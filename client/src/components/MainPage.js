@@ -10,6 +10,8 @@ import MapListGroup from "./MapListGroup";
 import MockLocationData from "../MockData/MockLocationData.json";
 
 const MainPage = () => {
+
+  // use states for data handling
   const [activeAddress, setActiveAddress] = useState(null);
   const [REIMapLink, setREIMapLink] = useState(
     MockLocationData.Location[0].link
@@ -17,6 +19,7 @@ const MainPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [locations, setLocations] = useState(MockLocationData.Location);
 
+  // loads initial mock data to local storage
   useEffect(() => {
     // Load locations from local storage or mock data on initial render
     const storedLocations = JSON.parse(localStorage.getItem("locations"));
@@ -27,6 +30,7 @@ const MainPage = () => {
     }
   }, []);
 
+  // changes map display to show the clicked on location
   const handleClick = (address, link) => {
     setActiveAddress(address);
     setREIMapLink(link);

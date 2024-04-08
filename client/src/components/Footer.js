@@ -2,6 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
+
+    // ===== Start of Bootstrap Footer =====
     <footer class="bg-dark text-center text-white mt-5 fixed-bottom">
       <div class="container p-4">
         <section class="mb-4">
