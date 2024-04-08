@@ -36,13 +36,23 @@ const MainPage = () => {
   // submits newly created locations to local storage so that they are carried over between pages and refreshes
   const handleSubmit = (e) => {
     e.preventDefault();
+    const address = e.target.address.value.trim();
+    const hour = e.target.hours.value.trim();
+    const phone = e.target.phone.value.trim();
+
+    // Check if any of the fields are empty
+    if (!address || !hour || !phone) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
     const newLocation = {
-      address: e.target.address.value,
-      hour: e.target.hours.value,
-      phone: e.target.phone.value,
-      link: ""
+      address: address,
+      hour: hour,
+      phone: phone,
+      link: "",
     };
-    // Adds the new location to the state
+
     const updatedLocations = [...locations, newLocation];
     setLocations(updatedLocations);
     // Save to local storage
@@ -52,6 +62,12 @@ const MainPage = () => {
 
   // handles the deletion of locations from local storage
   const handleDelete = (addressToDelete) => {
+    // Prompts the user for confirmation before deleting a location
+    const confirmation = window.confirm("Are you sure you want to delete this location?");
+    if (!confirmation) {
+      return;
+    }
+  
     // Filter out the location to delete
     const updatedLocations = locations.filter(
       (location) => location.address !== addressToDelete
@@ -63,7 +79,10 @@ const MainPage = () => {
 
   return (
     // =========== START OF MAIN PAGE ===========
-    <div className="main-container" style={{ overflowY: 'auto', maxHeight:'calc(100vh - 250px)'}}>
+    <div
+      className="main-container"
+      style={{ overflowY: "auto", maxHeight: "calc(100vh - 250px)" }}
+    >
       {/* =========== NAVBAR =========== */}
       <NavBar />
 
@@ -93,15 +112,19 @@ const MainPage = () => {
             <div className="list-group-container">
               <div className="list-group">
                 {locations.map((location) => (
-                  <div className="d-flex justify-content-between" key={location.address}>
+                  <div
+                    className="d-flex justify-content-between"
+                    key={location.address}
+                  >
                     <MapListGroup
                       active={location.address === activeAddress}
-                      onClick={() => handleClick(location.address, location.link)}
+                      onClick={() =>
+                        handleClick(location.address, location.link)
+                      }
                       address={location.address}
                       hour={location.hour}
                       phone={location.phone}
                       searchQuery={searchQuery}
-                      
                     />
                     {/* ===== DELETE BUTTON ===== */}
                     <button
@@ -125,23 +148,31 @@ const MainPage = () => {
 
         {/* Space underneath both columns */}
         <div className="admin-container">
-        <div className="col">
+          <div className="col">
             <div className="container-fluid bg-light p-4">
               <h2>Add Location</h2>
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                  <label htmlFor="address" className="form-label">Location Address</label>
+                  <label htmlFor="address" className="form-label">
+                    Location Address
+                  </label>
                   <input type="text" className="form-control" id="address" />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="hours" className="form-label">Hours</label>
+                  <label htmlFor="hours" className="form-label">
+                    Hours
+                  </label>
                   <input type="text" className="form-control" id="hours" />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="phone" className="form-label">Phone Number</label>
+                  <label htmlFor="phone" className="form-label">
+                    Phone Number
+                  </label>
                   <input type="text" className="form-control" id="phone" />
                 </div>
-                <button type="submit" className="btn btn-success">Submit</button>
+                <button type="submit" className="btn btn-success">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
