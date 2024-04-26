@@ -3,7 +3,8 @@ import { useState } from "react";
 export default function ListGroup(props) {
   
     return(
-            <a href="#" class={`list-group-item list-group-item-action ${props.active ? "active":""}`} aria-current="true"
+            <a href="#" class={`list-group-item list-group-item-action ${props.active ? "active":""}`} 
+            aria-current="true"
             onClick={props.onClick}
             >
 
