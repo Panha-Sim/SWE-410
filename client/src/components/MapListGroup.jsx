@@ -3,25 +3,6 @@ import { useState, useEffect } from "react";
 import "../styles/MapListGroup.css";
 
 export default function ListGroup(props) {
-<<<<<<< HEAD
-  
-    return(
-            <a href="#" class={`list-group-item list-group-item-action ${props.active ? "active":""}`} 
-            aria-current="true"
-            onClick={props.onClick}
-            >
-
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{props.address}</h5>
-                </div>
-
-                <p class="mb-1">{props.hour}</p>
-                <small>{props.phone}</small>
-
-            </a>
-    )
-  
-=======
 
   // state to check if the address matches the search query when a user searches
   const [isMatched, setIsMatched] = useState(true);
@@ -62,5 +43,4 @@ export default function ListGroup(props) {
       <small>{props.phone}</small>
     </a>
   );
->>>>>>> b16e55f00dea3a4dbb9b21adde9031c8027e4eb1
 }
