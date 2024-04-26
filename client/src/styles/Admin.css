@@ -12,10 +12,15 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== Locations list ===== */
 .list-group-container {
   max-height: 550px;
   overflow-y: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+  max-height: 40px;
 }
 
 /* ===== Width of Scrollbar ===== */
@@ -44,4 +49,11 @@ header {
   font-size: 24px;
   margin-left: 20px;
   font-weight: bold;
+}
+
+/* ===== Admin Form at bottom of page ===== */
+.admin-container {
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }

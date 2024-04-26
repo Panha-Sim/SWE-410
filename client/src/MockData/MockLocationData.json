@@ -35,6 +35,13 @@
             "hour":"Mon-Fri: 9:00 AM - 8:00 PM",
             "phone": "(928) 213-1914",
             "link":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398379.784235709!2d-114.3473675012856!3d33.71592810635075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8f6b1cdb545b%3A0xbf58dc49bf096ad5!2sREI!5e0!3m2!1sen!2sus!4v1709494569348!5m2!1sen!2sus"
+        },
+        {
+            "address": "2220 Village Walk Dr Suite 150, Henderson, NV 89052",
+            "hour": "Mon-Fri: 10:00 AM - 9:00 PM",
+            "phone": "(702) 896-7111",
+            "link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304380.9920812906!2d-118.63343873427351!3d36.02189133007691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d1ddc0387d25%3A0x357dbd6a4856717!2sREI!5e0!3m2!1sen!2sus!4v1712388518194!5m2!1sen!2sus"
         }
+        
     ]
 }
