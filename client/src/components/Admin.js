@@ -86,7 +86,6 @@ const MainPage = () => {
     // =========== START OF MAIN PAGE ===========
     <div
       className="main-container"
-      style={{ overflowY: "auto", maxHeight: "calc(100vh - 250px)" }}
     >
       {/* =========== NAVBAR =========== */}
       <NavBar />

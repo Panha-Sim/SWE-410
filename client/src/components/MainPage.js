@@ -39,7 +39,7 @@ const MainPage = () => {
 
   return (
     // =========== START OF MAIN PAGE ===========
-    <div className="main-container" style={{ overflowY: 'auto', maxHeight:'calc(100vh - 250px)'}}>
+    <div className="main-container">
       {/* =========== NAVBAR =========== */}
       <NavBar />
 
